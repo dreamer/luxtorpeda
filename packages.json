@@ -106,9 +106,9 @@
 		"command":      "./DDLC.sh"
 	},
 	"22320": {
-        "game_name": "The Elder Scrolls III: Morrowind",
-        "package_url": "https://luxtorpeda.gitlab.io/packages/openmw/",
-        "package": "openmw-22320.tar.xz",
-        "command": "./openmw-launcher-wrapper"
+	        "game_name": "The Elder Scrolls III: Morrowind",
+        	"package_url": "https://luxtorpeda.gitlab.io/packages/openmw/",
+        	"package": "openmw-22320.tar.xz",
+        	"command": "./openmw-launcher-wrapper"
 	}
 }
