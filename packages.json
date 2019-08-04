@@ -104,5 +104,10 @@
 	"698780": {
 		"game_name":    "Doki Doki Literature Club",
 		"command":      "./DDLC.sh"
+	},
+	"22320": {
+        	"game_name": "Morrowind",
+        	"package": "dist.tar.xz",
+        	"command": "./openmw-launcher-wrapper"
 	}
 }
