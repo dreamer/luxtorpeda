@@ -2,7 +2,7 @@
 
 [![luxtorpeda discord](https://img.shields.io/discord/514567252864008206.svg?label=discord)](https://discord.gg/8mFhUPX)
 
-Steam Play compatibility tool to run games on Steam using native Linux engines; [project overview](https://github.com/dreamer/luxtorpeda/wiki).
+Steam Play compatibility tool to run games using native Linux engines; [project overview](https://github.com/dreamer/luxtorpeda/wiki).
 
 This is a sister project of [Boxtron](https://github.com/dreamer/boxtron/).
 
@@ -18,7 +18,7 @@ Compatibility tool will work on any modern 64-bit Linux distribution.
 All packaged games are compiled for Steam Runtime environment and require no
 additional dependencies.
 
-**Using Luxtorpeda with [Steam native runtime](https://wiki.archlinux.org/index.php/Steam/Troubleshooting#Steam_native_runtime) may or may not work, but is generally not supported.**
+**Using Luxtorpeda with [Steam native runtime](https://wiki.archlinux.org/index.php/Steam/Troubleshooting#Steam_native_runtime) may or may not work, but is not supported.**
 
 ## Installation (using tarball)
 
