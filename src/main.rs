@@ -3,10 +3,14 @@ extern crate lazy_static;
 extern crate json;
 
 use regex::Regex;
+use serde::{Deserialize, Serialize};
 use std::env;
 use std::fs;
+use std::fs::File;
 use std::io;
+use std::io::BufReader;
 use std::io::{Error, ErrorKind};
+use std::path::Path;
 use std::process::Command;
 
 mod fakescripteval;
@@ -25,6 +29,43 @@ fn json_to_args(args: &json::JsonValue) -> Vec<String> {
         .skip_while(|o| o.is_none())
         .map(|j| j.unwrap().to_string())
         .collect()
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+struct CommandReplacement {
+    #[serde(with = "serde_regex")]
+    match_cmd: Regex,
+    cmd: String,
+    args: Vec<String>,
+}
+
+fn read_crepl_from_file<P: AsRef<Path>>(path: P) -> Result<CommandReplacement, Error> {
+    // Open the file in read-only mode with buffer.
+    let file = File::open(path)?;
+    let reader = BufReader::new(file);
+
+    // Read the JSON contents of the file as an instance of
+    let u = serde_json::from_reader(reader)?;
+
+    // Return the `User`.
+    Ok(u)
+}
+
+fn get_cmd_replacements(info: &json::JsonValue) -> Vec<CommandReplacement> {
+    let mut vec = Vec::new();
+
+    let cmds = &info["commands"];
+    for (expr, new_cmd) in cmds.entries() {
+        let repl = CommandReplacement {
+            // match_cmd: expr.to_string(), // Regex::new(expr).unwrap(),
+            match_cmd: Regex::new(expr).unwrap(),
+            cmd: new_cmd["cmd"].to_string(),
+            args: json_to_args(&new_cmd["args"])
+        };
+        vec.push(repl);
+    }
+
+    vec
 }
 
 fn find_game_command(info: &json::JsonValue, args: &[&str]) -> Option<(String, Vec<String>)> {
@@ -84,6 +125,27 @@ fn run(args: &[&str]) -> io::Result<()> {
 
     println!("json:");
     println!("{:#}", game_info);
+
+    // let meta = read_crepl_from_file("metadata.lux/vkquake.json")?;
+    // println!("meta:");
+    // println!("{:?}", meta);
+
+    ////////////////////////////////
+
+    let repl = CommandReplacement {
+        match_cmd: Regex::new(".*").unwrap(),
+        cmd: "foo".to_string(),
+        args: [].to_vec(),
+    };
+
+    // Serialize it to a JSON string.
+    let j = serde_json::to_string(&repl)?;
+
+    // Print, write to a file, or send to an HTTP server.
+    println!("{}", j);
+
+
+    ////////////////////////////////
 
     if !game_info["download"].is_null() {
         package::install()?;
