@@ -276,6 +276,17 @@
         ],
         "command": "./openmw.sh"
     },
+    "38410": {
+        "game_name": "Fallout 2: A Post Nuclear Role Playing Game",
+        "download": [
+            {
+                "name": "falltergeist",
+                "url":  "https://itxaka.gitlab.io/falltergeist/",
+                "file": "falltergeist-38410.tar.xz"
+            }
+        ],
+        "command": "./falltergeist"
+    },
     "698780": {
         "game_name": "Doki Doki Literature Club",
         "command": "./DDLC.sh"
