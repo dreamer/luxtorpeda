@@ -279,5 +279,16 @@
     "698780": {
         "game_name": "Doki Doki Literature Club",
         "command": "./DDLC.sh"
+    },
+    "2210": {
+        "game_name": "Quake 4",
+        "download": [
+            {
+                "name": "Quake4",
+                "url":  "https://d10sfan.gitlab.io/luxtorpeda-quake4/",
+                "file": "quake4-2210.tar.xz"
+            }
+        ],
+        "command": "./run-quake4.sh"
     }
 }
