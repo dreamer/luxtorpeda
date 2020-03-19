@@ -279,5 +279,16 @@
     "698780": {
         "game_name": "Doki Doki Literature Club",
         "command": "./DDLC.sh"
+    },
+    "3730": {
+        "game_name": "AVP",
+        "download": [
+            {
+                "name": "AVP",
+                "url":  "https://d10sfan.gitlab.io/luxtorpeda-avp/",
+                "file": "avp-3730.tar.xz"
+            }
+        ],
+        "command": "./run-avp.sh"
     }
 }
