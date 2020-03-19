@@ -279,5 +279,16 @@
     "698780": {
         "game_name": "Doki Doki Literature Club",
         "command": "./DDLC.sh"
+    },
+    "13230": {
+        "game_name": "UT2004",
+        "download": [
+            {
+                "name": "UT2004",
+                "url":  "https://d10sfan.gitlab.io/luxtorpeda-ut2004/",
+                "file": "ut2004-13230.tar.xz"
+            }
+        ],
+        "command": "./run-ut2004.sh"
     }
 }
