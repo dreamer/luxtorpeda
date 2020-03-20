@@ -279,5 +279,16 @@
     "698780": {
         "game_name": "Doki Doki Literature Club",
         "command": "./DDLC.sh"
+    },
+    "3970": {
+        "game_name": "Prey 2006",
+        "download": [
+            {
+                "name": "Prey",
+                "url":  "https://d10sfan.gitlab.io/luxtorpeda-prey2006/",
+                "file": "prey2006-3970.tar.xz"
+            }
+        ],
+        "command": "./run-prey.sh"
     }
 }
