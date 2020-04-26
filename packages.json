@@ -276,6 +276,17 @@
         ],
         "command": "./openmw.sh"
     },
+    "39510": {
+        "game_name": "Gothic II",
+        "download": [
+            {
+                "name": "opengothic",
+                "url":  "https://d10sfan.gitlab.io/luxtorpeda-opengothic/",
+                "file": "opengothic-39510.tar.xz"
+            }
+        ],
+        "command": "./run-gothic2.sh"
+    },
     "698780": {
         "game_name": "Doki Doki Literature Club",
         "command": "./DDLC.sh"
