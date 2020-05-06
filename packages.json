@@ -276,6 +276,17 @@
         ],
         "command": "./openmw.sh"
     },
+    "208200": {
+        "game_name": "Doom 3 BFG",
+        "download": [
+            {
+                "name": "doom3bfg",
+                "url":  "https://d10sfan.gitlab.io/luxtorpeda-doom3bfg/",
+                "file": "doom3bfg-208200.tar.xz"
+            }
+        ],
+        "command": "./RBDoom3BFG"
+    },
     "698780": {
         "game_name": "Doki Doki Literature Club",
         "command": "./DDLC.sh"
