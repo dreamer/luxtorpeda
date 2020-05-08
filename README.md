@@ -102,6 +102,7 @@ You need to select Luxtorpeda as a compatibility tool first, of course.
 | [Heretic: Shadow of the Serpent Riders](https://store.steampowered.com/app/2390/) | [GZDoom](https://zdoom.org/)                                | `4.2.1`             | *Vulkan renderer crashes on exit*
 | [Hexen: Beyond Heretic](https://store.steampowered.com/app/2360/)                 | [GZDoom](https://zdoom.org/)                                | `4.2.1`             | *Vulkan renderer crashes on exit*
 | [Doki Doki Literature Club!](https://store.steampowered.com/app/698780/)          | [Ren'Py](https://www.renpy.org/)                            |                     | **(Free to play)** *Using Linux version bundled with Windows version*
+| [Freespace 2](https://store.steampowered.com/app/273620/Freespace_2/)                 | [scp-fs2open](https://github.com/scp-fs2open/fs2open.github.com)                                | `d52bddf (from master)`             | 
 
 Want a specific game? Maybe we are
 [already working on it](https://github.com/dreamer/luxtorpeda/wiki/Game-engines#on-agenda-wip-and-supported-engines).
