@@ -279,5 +279,16 @@
     "698780": {
         "game_name": "Doki Doki Literature Club",
         "command": "./DDLC.sh"
+    },
+    "273620": {
+        "game_name": "Freespace 2",
+        "download": [
+            {
+                "name": "fs2open",
+                "url":  "https://d10sfan.gitlab.io/luxtorpeda-fs2open/",
+                "file": "fs2open-273620.tar.xz"
+            }
+        ],
+        "command": "./run-freespace2.sh"
     }
 }
