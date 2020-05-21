@@ -285,7 +285,7 @@
         "download": [
             {
                 "name": "AVP",
-                "url":  "https://d10sfan.gitlab.io/luxtorpeda-avp/",
+                "url":  "https://luxtorpeda-dev.gitlab.io/packages/avp/",
                 "file": "avp-3730.tar.xz"
             }
         ],
