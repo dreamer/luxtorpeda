@@ -1,7 +1,16 @@
+| ℹ️ | Head over to [stable version](https://github.com/luxtorpeda-dev/luxtorpeda) if you want to play the games right now.
+|--- |---
+
+*This version of Luxtorpeda is a prototype, that was never released.
+I intend to fundamentally redesign the tool and release it as Luxtorpeda 2.0,
+but until that happens, install up-to-date version of
+[Luxtorpeda 1.x](https://github.com/luxtorpeda-dev/luxtorpeda#installation-using-tarball),
+which supports [many more game engines](https://luxtorpeda-dev.github.io/packages.html).*
+
+
 # Luxtorpeda
 
 [![Luxtorpeda project Discord](https://img.shields.io/discord/514567252864008206.svg?label=discord)](https://discord.gg/8mFhUPX)
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/dreamer)
 
 Steam Play compatibility tool to run games using native Linux engines; [project overview](https://github.com/dreamer/luxtorpeda/wiki).
 
@@ -9,11 +18,6 @@ This is a sister project of
 [Boxtron](https://github.com/dreamer/boxtron/) and
 [Roberta](https://github.com/dreamer/roberta).
 
-![screenshot-0](https://user-images.githubusercontent.com/3967/61964568-7b674500-afce-11e9-9c42-ef6cc1b425b6.png)
-
-Official mirrors:
-[GitHub](https://github.com/dreamer/luxtorpeda),
-[GitLab](https://gitlab.com/luxtorpeda/luxtorpeda).
 
 ## Pre-requisites
 
