@@ -96,6 +96,7 @@ fn run(args: &[&str]) -> io::Result<()> {
     println!("original command: {:?}", args);
     println!("working dir: {:?}", env::current_dir());
     println!("tool dir: {:?}", user_env::tool_dir());
+    println!("library path: {:?}", env::var_os("LD_LIBRARY_PATH"));
 
     let packages_json_file = user_env::tool_dir().join("packages.json");
     let json_str = fs::read_to_string(packages_json_file)?;
