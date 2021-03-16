@@ -1,4 +1,4 @@
-.PHONY: all build test clean doc install user-install user-uninstall
+.PHONY: all build test clean doc install dev-install dev-uninstall
 
 # These variables are used to generate compatibilitytool.vdf:
 #
@@ -83,7 +83,7 @@ install: $(tool_dir)
 	mkdir -p $(install_dir)
 	cp -av $(tool_dir)/* $(install_dir)/
 
-user-install: \
+dev-install: \
 		build \
 		target/debug/compatibilitytool.vdf \
 		target/debug/toolmanifest.vdf \
@@ -93,7 +93,7 @@ user-install: \
 	mkdir -p $(dev_install_dir)
 	cd target/debug && cp --reflink=auto -t $(dev_install_dir) $(files)
 
-user-uninstall:
+dev-uninstall:
 	rm -rf $(dev_install_dir)
 
 check-formatting:

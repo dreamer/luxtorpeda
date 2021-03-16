@@ -58,7 +58,7 @@ Fedora
 
        $ git clone https://github.com/dreamer/luxtorpeda.git
        $ cd luxtorpeda
-       $ make user-install
+       $ make dev-install
 
 3. Start Steam.
 4. In game properties window select "Force the use of a specific Steam Play
