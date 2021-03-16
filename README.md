@@ -1,11 +1,12 @@
 | ℹ️ | Head over to [stable version](https://github.com/luxtorpeda-dev/luxtorpeda) if you want to play the games right now.
 |--- |---
 
-*This version of Luxtorpeda is a prototype, that was never released.
-I intend to fundamentally redesign the tool and release it as Luxtorpeda 2.0,
+*This version of Luxtorpeda is a prototype, that was never released.*
+
+*I intend to fundamentally redesign the tool and release it as Luxtorpeda 2.0,
 but until that happens, install up-to-date version of
-[Luxtorpeda 1.x](https://github.com/luxtorpeda-dev/luxtorpeda#installation-using-tarball),
-which supports [many more game engines](https://luxtorpeda-dev.github.io/packages.html).*
+[Luxtorpeda 1.x][luxtorpeda-dev-install], which supports
+[many more game engines][luxtorpeda-dev-packages].*
 
 
 # Luxtorpeda
@@ -31,15 +32,8 @@ additional dependencies.
 
 *This is pre-release quality software, expect bugs and missing features.*
 
-1. Close Steam.
-2. Download and unpack tarball to compatibilitytools.d directory (create one if it does not exist):
+Head over to [luxtorpeda-dev][luxtorpeda-dev-install] for stable release.
 
-        $ cd ~/.local/share/Steam/compatibilitytools.d/ || cd ~/.steam/root/compatibilitytools.d/
-        $ curl -L https://luxtorpeda.gitlab.io/luxtorpeda/master/luxtorpeda.tar.xz | tar xJf -
-
-3. Start Steam.
-4. In game properties window select "Force the use of a specific Steam Play
-   compatibility tool" and select "Luxtorpeda".
 
 ## Installation (debug build, from source)
 
@@ -107,16 +101,5 @@ You need to select Luxtorpeda as a compatibility tool first, of course.
 | [Hexen: Beyond Heretic](https://store.steampowered.com/app/2360/)                 | [GZDoom](https://zdoom.org/)                                | `4.2.1`             | *Vulkan renderer crashes on exit*
 | [Doki Doki Literature Club!](https://store.steampowered.com/app/698780/)          | [Ren'Py](https://www.renpy.org/)                            |                     | **(Free to play)** *Using Linux version bundled with Windows version*
 
-Want a specific game? Maybe we are
-[already working on it](https://github.com/dreamer/luxtorpeda/wiki/Game-engines#on-agenda-wip-and-supported-engines).
-You can also
-[make a package request](https://github.com/dreamer/luxtorpeda/issues/new),
-or
-[create package yourself](https://github.com/dreamer/luxtorpeda/wiki/Packaging-tutorial)! :)
-
-## Development
-
-You can use `cargo` as with any Rust project; `make` serves only as a convenient
-frontend for packaging and triggering longer `cargo` commands.
-
-TODO: Add documentation about packaging games for Luxtorpeda.
+[luxtorpeda-dev-packages]: https://luxtorpeda-dev.github.io/packages.html
+[luxtorpeda-dev-install]: https://github.com/luxtorpeda-dev/luxtorpeda#installation-using-tarball
